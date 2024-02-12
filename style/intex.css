@@ -1,0 +1,1738 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif;
+}
+
+
+
+
+
+/* header */
+
+.header {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(to top, #F1DEC9 0%, #8D7B68 100%, #8D7B68 100%);
+}
+
+nav {
+  width: 100%;
+  padding: 3rem 6%;
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.home {
+  background: transparent;
+  color: #ffffffdc;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 70px;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.nav-links a {
+  font-size: 1.4rem;
+  color: #ffffffdc;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 2.5rem;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.nav-links a:hover {
+ border-bottom: 2px solid #ffffffa2;
+}
+
+.text-box {
+  background: transparent;
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  background: transparent;
+  font-family: 'Times New Roman', serif;
+  padding: 20px;
+  padding-top: 50px;
+  font-size: 120px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.button_intex {
+  font-family: 'Times New Roman', serif;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 4px solid #fff;
+  padding: 20px 40px;
+  font-size: 32px;
+  margin-top: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button_intex:hover {
+  background: #584d418b;
+  border: 4px solid #584d410a;
+  transition: 1.2s;
+  color: #e0cdbd;
+}
+
+/* done header */
+
+
+
+
+
+/* motto */
+
+.main {
+  background: linear-gradient(to top, #C8B6A6 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 100vh;
+  transition: 4s ease-out;
+}
+
+.text-main-motto {
+  font-family: 'Times New Roman', Times, serif;
+  color: #584d418b;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.second-main {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  margin: auto;
+  border: 0px solid black;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.second-main-1 {
+  border: 0px solid black;
+  height: 75vh;
+}
+
+.text-motto {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  font-size: 65px;
+  text-align: justify;
+  text-indent: 100px;
+  padding: 50px;
+  text-align-last: center;
+}
+
+.second-main-2 {
+  display: flex;
+  border: 0px solid black;
+  height: 75vh;
+}
+
+.flip-box-motto {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  padding: auto;
+  background-color: transparent;
+  width: 450px;
+  height: 570px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-motto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-motto:hover .flip-box-inner-motto {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-motto, .flip-box-back-motto {
+  cursor: pointer;
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-motto {
+  place-items: center;
+  border-radius: 20px;
+  width: 450px;
+  height: 570px;
+}
+
+.flip-box-back-motto {
+  background: linear-gradient(to top, #C8B6A6 0%,#F1DEC9 50%, #F1DEC9 100%);
+  color: #584d418b;
+  transform: rotateY(180deg);
+  border: 5px solid #584d418b;
+}
+
+.flip-box-back-motto h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 50px;
+  line-height: 570px;
+}
+
+/* done motto */
+
+
+
+
+
+/* intro */
+
+.intro {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  height: 100vh;
+}
+
+.text-titlu-intro {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.second-intro {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 50vw 45vw;
+  margin: auto;
+  border: 0px solid black;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.second-intro-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 75vh;
+  padding-left: 70px;
+}
+
+.second-intro-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 75vh;
+}
+
+
+.text-intro {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 20px;
+  text-align: justify;
+  text-indent: 120px;
+  line-height: 60px;
+}
+
+.flip-box-intro {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 510px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-intro:hover .flip-box-inner-intro {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-intro, .flip-box-back-intro {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-intro {
+  border-radius: 20px;
+  width: 700px;
+  height: 510px;
+}
+
+.flip-box-back-intro {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-intro h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done intro*/
+
+
+
+
+
+
+/* biografie */
+
+.biografie {
+  background: linear-gradient(to top, #a4907ce7 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 130vh;
+}
+
+.text-titlu-biografie {
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.text-biografie {
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  text-align: center;
+  line-height: 10vh;
+  font-size: 40px;
+  padding: 150px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+} 
+
+.section-image {
+  margin: auto;
+  border: 0px solid black;
+  width: 99vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.poze-biografie {
+  height: 600px;
+  width: auto;
+  border-radius: 20px;
+}
+
+/* done biografie */
+
+
+
+
+
+/* bibliografie */
+
+.bibliografie {
+  height: 46vh;
+  background: linear-gradient(to top, #A4907C 0%,#A4907C 50%, #a4907ce7 100%);
+}
+
+.mod {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 0px solid black;
+  height: 38vh;
+  padding-top: 100px;
+}
+
+.box-bilio {
+  width: 33vw;
+  border: 0px solid black;
+}
+
+.text-titlu-biliografie {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 42px;
+  text-align: center;
+  line-height: 90px;
+}
+
+.text-first-biliografie-1 {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.text-first-biliografie-2 {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  padding-top: 18px;
+}
+
+.text-second-biliografie {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 70px;
+}
+
+.text-last-biliografie {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.text-last-biliografie a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* done bibliografie */
+
+
+
+
+
+
+
+
+
+/* 1.html */
+
+
+
+
+/* Imagini */
+
+.text-main-img {
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 75vh;
+}
+
+.flip-box-img {
+  cursor: pointer;
+  background-color: transparent;
+  width: 800px;
+  height: 450px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-box-inner-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-img:hover .flip-box-inner-img {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-img, .flip-box-back-img {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.size-img {
+  border-radius: 20px;
+  height: 450px;
+  width: 800px;
+}
+
+.flip-box-backpag-img {
+  background-color: #ffffff;
+  color: #B29460;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-img, .flip-box-backpag-img {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* done imagini */
+
+
+
+
+/* idee principala */
+
+.text-idee {
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 20px;
+  text-align: justify;
+  text-indent: 120px;
+  line-height: 60px;
+}
+
+.flip-box-idee-1 {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 510px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-idee-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-idee-1:hover .flip-box-inner-idee-1 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-idee-1, .flip-box-back-idee-1 {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-idee-1 {
+  border-radius: 20px;
+  width: 700px;
+  height: 510px;
+}
+
+.flip-box-back-idee-1 {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-idee-1 h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done idee principala */
+
+
+
+
+/* participanti ai revolutiei */
+
+.diagrama {
+  background: linear-gradient(to top, #C8B6A6 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 105vh;
+}
+
+.text-diagrama {
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+.box-diagrama {
+  height: 80vh;
+  display: grid;
+  margin: auto;
+  border: 0px solid black;
+}
+
+.size-img-diagrama {
+  display: block;
+  margin: auto;
+  height: 650px;
+  width: auto;
+  border-radius: 20px;
+}
+
+/* done participanti ai revolutiei */
+
+
+
+
+/* tudor vladimirescu */
+
+.flip-box-tudor {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 510px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-tudor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-tudor:hover .flip-box-inner-tudor {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-tudor, .flip-box-back-tudor {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.size-tudor-img {
+  border-radius: 20px;
+  width: 700px;
+  height: 510px;
+}
+
+.flip-box-back-tudor {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-tudor h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.second-main-ban {
+  height: 37.5vh;
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  margin: auto;
+  border: 0px solid black;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box-img-ban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 37.5vh;
+}
+
+.box-img-ban-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 37.5vh;
+}
+
+.size-img-ban {
+  border-radius: 20px;
+  width: 700px;
+  height: 280px;
+}
+
+.flip-box-img-ban {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 280px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-box-inner-ban {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-img-ban:hover .flip-box-inner-ban {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-ban, .flip-box-back-ban {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front-ban, .flip-box-back-ban-1 {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-back-ban {
+  background: linear-gradient(to top, #C8B6A6 0%,#F1DEC9 50%, #F1DEC9 100%);
+  color: #584d418b;
+  transform: rotateY(180deg);
+  border: 5px solid #584d418b;
+}
+
+.flip-box-back-ban-1 {
+  background: linear-gradient(to top, #F1DEC9 0%,#F1DEC9 50%, #F1DEC9 100%);
+  color: #584d418b;
+  transform: rotateY(180deg);
+  border: 5px solid #584d418b;
+}
+
+.flip-box-back-ban h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 45px;
+  padding: 60px;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.flip-box-back-ban-1 h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 45px;
+  padding: 60px;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+/* done tudor vladimirescu */
+
+
+
+
+/* programul revolutiei */
+
+.flip-box-prog-1 {
+  cursor: pointer;
+  background-color: transparent;
+  width: 400px;
+  height: 570px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-prog-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-prog-1:hover .flip-box-inner-prog-1 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-prog-1, .flip-box-back-prog-1 {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.size-img-prog {
+  border-radius: 20px;
+  width: 400px;
+  height: 570px;
+}
+
+.flip-box-back-prog-1 {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-prog-1 h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done programul revolutiei */
+
+
+
+
+/* done 1.html */
+
+
+
+
+
+
+
+
+
+/* 2.html */
+
+
+
+
+/* idee principala */
+
+.flip-box-idee-2 {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 510px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-idee-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-idee-2:hover .flip-box-inner-idee-2 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-idee-2, .flip-box-back-idee-2 {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-idee-2 {
+  border-radius: 20px;
+  width: 700px;
+  height: 510px;
+}
+
+.flip-box-back-idee-2 {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-idee-2 h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done idee principala */
+
+
+
+
+/* conducatori ai revolutiei */
+
+.table-size {
+  border: 2px solid #ffffff8b;
+  background: #584d418b;
+  width: 20vw;
+  color: #f1f1f1;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px;
+}
+ 
+.table-position {
+  width: 85vw;
+  display: block;
+  margin: auto;
+}
+
+.table-size-1 {
+  border: 2px solid #ffffff8b;
+  border-top-left-radius: 50px;
+  background: #584d418b;
+  width: 20vw;
+  color: #f1f1f1;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px;
+}
+
+.table-size-2 {
+  border: 2px solid #ffffff8b;
+  border-top-right-radius: 50px;
+  background: #584d418b;
+  width: 20vw;
+  color: #f1f1f1;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px;
+}
+
+.table-size-3 {
+  border: 2px solid #ffffff8b;
+  border-bottom-left-radius: 50px;
+  background: #584d418b;
+  width: 20vw;
+  color: #f1f1f1;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px;
+}
+
+.table-size-4 {
+  border: 2px solid #ffffff8b;
+  border-bottom-right-radius: 50px;
+  background: #584d418b;
+  width: 20vw;
+  color: #f1f1f1;
+  font-size: 35px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* done conducatori ai revolutiei */
+
+
+
+
+/* orgazirea militara */
+
+.flip-box-org {
+  cursor: pointer;
+  background-color: transparent;
+  width: 500px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-org {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-org:hover .flip-box-inner-org {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-org, .flip-box-back-org {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-org {
+  border-radius: 20px;
+  width: 500px;
+  height: 600px;
+}
+
+.flip-box-back-org {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-org h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done orgazirea militara */
+
+
+
+
+/* quiz */
+
+.quiz {
+  background: linear-gradient(to top, #a4907ce7 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 100vh;
+}
+
+main{
+  display: block;
+  margin: auto;
+  height: 80vh;
+}
+
+.game-quiz-container {
+  width: 85rem;
+  height: 42rem;
+  background-color: #584d418b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.game-details-container {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-details-container h1 {
+  color: #ffffffe8;
+  font-size: 1.8rem;
+}
+
+.game-question-container {
+  margin-top: -30px;
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff8b;
+  border-radius: 25px;
+}
+
+.game-question-container h1 {
+  font-size: 1.8rem;
+  color: #ffffffe8;
+  text-align: center;
+  padding: 0px;
+  font-weight: 0px;
+}
+
+.game-options-container {
+  width: 110%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-options-container span {
+  width: 72.5%;
+  height: 5rem;
+  border: 2px solid #ffffff8b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+span label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.878);
+}
+
+span label:hover {
+  -ms-transform: scale(1.12);
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  color: #ffffff;
+}
+
+input[type="radio"] {
+  position: relative;
+  display: none;
+}
+
+
+input[type=radio]:checked ~ .option {
+  background: #584d418b;
+}
+
+.next-button-container{
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.next-button-container button {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #ffffff8b;
+  cursor: pointer;
+  outline: none;
+}
+.next-button-container button:hover {
+  background-color: #584d418b;
+  color: #ffffffc5;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  -webkit-animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.modal-content-container {
+  height: 20rem;
+  width: 25rem;
+  background-color: rgb(43, 42, 42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+.modal-content-container h1 {
+  font-size: 1.4rem;
+  height: 3rem;
+  line-height: 40px;
+  color: lightgray;
+  text-align: center;
+}
+
+.modal-content-container h2 {
+  font-size: 1.4rem;
+  color: lightgray;
+  text-align: center;
+}
+
+.grade-details {
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grade-details p {
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
+
+.modal-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button-container button {
+  width: 10rem;
+  height: 2.5rem;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(252, 242, 241);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.modal-button-container button:hover {
+  background-color: rgba(58, 58, 58, 0.359);
+}
+
+/* done quiz */
+
+
+
+
+/* done 2.html */
+
+
+
+
+
+
+
+
+
+/* 3.html */
+
+
+
+
+/* idee principala */
+
+.flip-box-idee-3 {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 510px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-idee-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-idee-3:hover .flip-box-inner-idee-3 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-idee-3, .flip-box-back-idee-3 {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-idee-3 {
+  border-radius: 20px;
+  width: 700px;
+  height: 510px;
+}
+
+.flip-box-back-idee-3 {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-idee-3 h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done idee principala */
+
+
+
+
+/* regimul lui tudor */
+
+.flip-box-reg {
+  cursor: pointer;
+  background-color: transparent;
+  width: 700px;
+  height: 510px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-reg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-reg:hover .flip-box-inner-reg {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-reg, .flip-box-back-reg {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.poza-reg {
+  border-radius: 20px;
+  width: 700px;
+  height: 510px;
+}
+
+.flip-box-back-reg {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-reg h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done regimul lui tudor */
+
+
+
+
+/* urmari si concluzii */
+
+.flip-box-urm {
+  cursor: pointer;
+  background-color: transparent;
+  width: 500px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.flip-box-inner-urm {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-urm:hover .flip-box-inner-urm {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-urm, .flip-box-back-urm {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.size-img-urm {
+  border-radius: 20px;
+  width: 500px;
+  height: 600px;
+}
+
+.flip-box-back-urm {
+  background: linear-gradient(to top, #F1DEC9 0%, #C8B6A6 50%, #C8B6A6 100%);
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border: 5px solid #ffffff;
+}
+
+.flip-box-back-urm h2 {
+  font-weight: bolder;
+  font-family: 'Times New Roman', serif;
+  font-size: 35px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* done urmari si concluzii */
+
+
+
+
+/* structura lucrarii */
+
+.str {
+  background: linear-gradient(to top, #a4907ce7 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 100vh;
+}
+
+.box-diagrama-1 {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 23vw 23vw 23vw 23vw;
+  border: 0px solid black;
+  align-items: center;
+  padding-left: 5vw;
+}
+
+.box-size-strc {
+  background: linear-gradient(to top, #C8B6A6 0%, #8D7B68 50%, #8D7B68 100%);
+  width: 20vw;
+  height: 20vh;
+  color: #f1f1f1;
+  font-size: 35px;
+  line-height: 20vh;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.box-size-strc:hover{
+  background-image: url(../images/Mavrogheni_trasura_cerbi.jpg);
+  color: #ffffff;
+  cursor: not-allowed;
+  background-position: center;
+  background-size: cover;
+  font-size: 0px;
+}
+
+.box-size-strc-12 {
+  background: linear-gradient(to top, #8D7B68 0%, #8D7B68 50%, #C8B6A6 100%);
+  width: 20vw;
+  height: 20vh;
+  color: #f1f1f1;
+  font-size: 35px;
+  line-height: 20vh;
+  text-align: center;
+  border-radius: 100px;
+  margin-left: 12.5vw;
+}
+
+.box-size-strc-12:hover{
+  background-image: url(../images/t3.jpg);
+  color: #ffffff;
+  cursor: not-allowed;
+  background-position: center;
+  background-size: cover;
+  font-size: 0px;
+}
+
+.box-size-strc-1 {
+  background: linear-gradient(to top, #C8B6A6 0%, #8D7B68 50%, #C8B6A6 100%);
+  width: 20vw;
+  height: 20vh;
+  color: #f1f1f1;
+  font-size: 35px;
+  line-height: 20vh;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.box-size-strc-1:hover{
+  background-image: url(../images/ty.png);
+  color: #ffffff;
+  cursor: not-allowed;
+  background-position: center;
+  background-size: cover;
+  font-size: 0px;
+}
+
+/* done structura lucrarii */
+
+
+
+
+/* video */
+
+.video {
+  background: linear-gradient(to top, #a4907ce7 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 115vh;
+}
+
+.video-1 {
+  background: linear-gradient(to top, #C8B6A6 0%,#F1DEC9 50%, #F1DEC9 100%);
+  height: 115vh;
+}
+
+.text-video {
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  text-align: center;
+  line-height: 25vh;
+  font-size: 110px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #90909098;
+}
+
+
+.videopag1 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, #a4907ce7 0%,#F1DEC9 50%, #F1DEC9 100%);
+  border-radius: 20px;
+}
+
+.videobox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 80vh;
+}
+
+.videobox1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  height: 80vh;
+}
+
+.video1{
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  margin: auto;
+  border: 0px solid black;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.videopag2 {
+  font-family: 'Times New Roman', serif;
+  color: #584d418b;
+  line-height: 8vh;
+  font-size: 35px;
+  text-align: justify;
+  padding: 30px;
+  text-indent: 100px;
+}
+
+/* done video */
+
+
+
+
+
+
+
+
+
+/* done 3.html */
+
+
+
+
+
+
+
+
+
+/* scroll */
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #584d41bc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #584d41d7; 
+}
+
+/* done scroll */
+
+
+
+
+
+
+
+
+
+/* btnScrollToTop */
+
+#btnScrollToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #584d418b;
+  border: 2px solid #584d4126;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  outline: none;
+}
+
+#btnScrollToTop:active {
+  background-color: #584d41db;
+}
+
+.material-icons.md-18{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+
+/* done btnScrollToTop */
+
+
+
+
+
+
+.id{
+  height: 10rem;
+}
+
+
+/*  media */
+
+@media (max-width:1710px) {
+
+
+}
+
+/* done media */
